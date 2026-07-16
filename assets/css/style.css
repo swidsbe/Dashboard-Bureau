@@ -1,0 +1,40 @@
+:root {
+    --sage: #8A9A82;
+    --anthracite: #2E2E2E;
+    --offwhite: #F5F1EA;
+    --wood: #A9784C;
+}
+
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    background-color: var(--offwhite) !important;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+
+.block-container {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Le composant Horloge est affiché dans une iframe Streamlit.
+   On force cette iframe à occuper tout l'écran pour un rendu
+   plein écran sans marge ni défilement. */
+iframe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    border: none;
+}
